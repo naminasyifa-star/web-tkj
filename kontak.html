@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontak TJKT - SMK Negeri 1 Kawali</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div class="topbar">
+
+  <div class="container">
+
+    <div class="topbar-left">
+
+      <span>✉ tjkt@smkn1kawali.com</span>
+      <span>☎ (021) 1234 5678</span>
+
+    </div>
+
+    <div class="topbar-social">
+
+      <a href="https://www.instagram.com/tkj_k_one/">IG</a>
+      <a href="https://www.youtube.com/@tkjsmkn1kawali495">YT</a>
+       <a href="https://www.facebook.com/p/TKJ-SMK-Negeri-1-Kawali-100064176391201/">FB</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<header class="main-nav">
+
+  <div class="container">
+
+    <a href="index.html" class="brand">
+
+      <div class="brand-logo">
+        TJKT
+      </div>
+
+      <div class="brand-text">
+
+        <div class="title">
+          TJKT
+        </div>
+
+        <div class="sub">
+          Teknik Jaringan Komputer<br>
+          dan Telekomunikasi
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <nav class="links">
+
+      <a href="index.html" class="nav-link">
+        Beranda
+      </a>
+
+      <a href="profil.html" class="nav-link">
+        Profil
+      </a>
+
+      <a href="artikel.html" class="nav-link">
+        Artikel
+      </a>
+
+      <a href="galeri.html" class="nav-link">
+        Galeri
+      </a>
+
+      <a href="berita.html" class="nav-link">
+        Berita
+      </a>
+
+      <a href="kontak.html" class="nav-link active">
+        Kontak
+      </a>
+
+    </nav>
+
+
+  
+
+  </div>
+
+</header>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <span class="eyebrow">
+        KONTAK
+      </span>
+
+      <h2>
+        Hubungi Kami
+      </h2>
+
+      <p>
+        Ada pertanyaan mengenai Jurusan TJKT atau PPDB?
+        Silakan hubungi kami.
+      </p>
+
+    </div>
+
+
+    <div class="contact-wrap">
+
+
+      <div class="contact-info-card">
+
+        <h3>
+          Informasi Kontak
+        </h3>
+
+        <p>
+          Tim kami siap membantu menjawab pertanyaan
+          seputar jurusan dan pendaftaran.
+        </p>
+
+
+        <ul>
+
+          <li>
+            📍 Jl. Talagasari,NO 10 Kawalimukti
+          </li>
+
+          <li>
+            ☎ (021) 1234 5678
+          </li>
+
+          <li>
+            ✉ tjkt@smkn1kawali.sch.id
+          </li>
+
+          <li>
+            🕐 Senin - Jumat (07.30 - 16.00)
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <form class="contact-form" id="contactForm">
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="name">
+              Nama Lengkap
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Masukkan nama"
+              required>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="email">
+              Email
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="nama@email.com"
+              required>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="subject">
+            Subjek
+          </label>
+
+          <input
+            type="text"
+            id="subject"
+            placeholder="Contoh: Pertanyaan PPDB">
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="message">
+            Pesan
+          </label>
+
+          <textarea
+            id="message"
+            placeholder="Tulis pesan kamu di sini..."
+            required></textarea>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary">
+
+          Kirim Pesan
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-bottom">
+
+      © 2026 Jurusan TJKT —
+      SMK Negeri 1 Example.
+      All Rights Reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const form =
+  document.getElementById('contactForm');
+
+form.addEventListener('submit', function(e) {
+
+  e.preventDefault();
+
+  const name =
+    document.getElementById('name').value.trim();
+
+  alert(
+    'Terima kasih, ' +
+    name +
+    '! Pesan kamu sudah kami terima.'
+  );
+
+  form.reset();
+
+});
+
+
+const toggle =
+  document.querySelector('.menu-toggle');
+
+const nav =
+  document.querySelector('nav.links');
+
+toggle.addEventListener('click', () => {
+
+  nav.style.display =
+    nav.style.display === 'flex'
+      ? 'none'
+      : 'flex';
+
+  nav.style.flexDirection = 'column';
+  nav.style.position = 'absolute';
+  nav.style.top = '82px';
+  nav.style.left = '0';
+  nav.style.right = '0';
+  nav.style.background = '#fff';
+  nav.style.padding = '20px 24px';
+  nav.style.gap = '18px';
+
+});
+
+</script>
+
+</body>
+</html>

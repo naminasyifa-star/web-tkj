@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Berita TJKT - SMK Negeri 1 Kawali</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+  <div class="container">
+
+    <div class="topbar-left">
+
+      <span>✉ tjkt@smkn1kawali.com</span>
+      <span>☎ (021) 1234 5678</span>
+
+    </div>
+
+    <div class="topbar-social">
+
+       <a href="https://www.instagram.com/tkj_k_one/">IG</a>
+      <a href="https://www.youtube.com/@tkjsmkn1kawali495">YT</a>
+       <a href="https://www.facebook.com/p/TKJ-SMK-Negeri-1-Kawali-100064176391201/">FB</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<header class="main-nav">
+
+  <div class="container">
+
+    <a href="index.html" class="brand">
+
+      <div class="brand-logo">
+        TJKT
+      </div>
+
+      <div class="brand-text">
+
+        <div class="title">
+          TJKT
+        </div>
+
+        <div class="sub">
+          Teknik Jaringan Komputer<br>
+          dan Telekomunikasi
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <nav class="links">
+
+      <a href="index.html" class="nav-link">
+        Beranda
+      </a>
+
+      <a href="profil.html" class="nav-link">
+        Profil
+      </a>
+
+      <a href="artikel.html" class="nav-link">
+        Artikel
+      </a>
+
+      <a href="galeri.html" class="nav-link">
+        Galeri
+      </a>
+
+      <a href="berita.html" class="nav-link active">
+        Berita
+      </a>
+
+      <a href="kontak.html" class="nav-link">
+        Kontak
+      </a>
+
+    </nav>
+
+
+    
+
+  </div>
+
+</header>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <span class="eyebrow">
+        BERITA TJKT
+      </span>
+
+      <h2>
+        Berita Terbaru
+      </h2>
+
+      <p>
+        Informasi terbaru mengenai kegiatan dan prestasi
+        Jurusan TJKT.
+      </p>
+
+    </div>
+
+
+    <div class="news-list">
+
+
+      <div class="news-item">
+
+        <div class="news-thumb article-blue">
+          🏆
+        </div>
+
+        <div>
+
+          <span class="news-date">
+            10 Mei 2026
+          </span>
+
+          <h4>
+            Siswa TJKT Raih Juara 1 Lomba Network Competition
+          </h4>
+
+          <p>
+            Tim TJKT berhasil meraih juara dalam kompetisi
+            jaringan tingkat nasional.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="news-item">
+
+        <div class="news-thumb article-green">
+          🏢
+        </div>
+
+        <div>
+
+          <span class="news-date">
+            2 Mei 2026
+          </span>
+
+          <h4>
+            Kunjungan Industri ke Data Center Profesional
+          </h4>
+
+          <p>
+            Siswa kelas XI TJKT melakukan kunjungan industri
+            untuk menambah wawasan dunia kerja.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="news-item">
+
+        <div class="news-thumb article-dark">
+          🌐
+        </div>
+
+        <div>
+
+          <span class="news-date">
+            25 April 2026
+          </span>
+
+          <h4>
+            Workshop Mikrotik untuk Siswa TJKT
+          </h4>
+
+          <p>
+            Workshop konfigurasi Mikrotik dan manajemen
+            bandwidth bersama praktisi jaringan.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="news-item">
+
+        <div class="news-thumb article-purple">
+          🔐
+        </div>
+
+        <div>
+
+          <span class="news-date">
+            18 April 2026
+          </span>
+
+          <h4>
+            Pelatihan Dasar Keamanan Jaringan
+          </h4>
+
+          <p>
+            Siswa TJKT mengikuti pelatihan keamanan jaringan
+            untuk meningkatkan kompetensi.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-bottom">
+
+      © 2026 Jurusan TJKT —
+      SMK Negeri 1 Kawali.
+      All Rights Reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav.links');
+
+toggle.addEventListener('click', () => {
+
+  nav.style.display =
+    nav.style.display === 'flex'
+      ? 'none'
+      : 'flex';
+
+  nav.style.flexDirection = 'column';
+  nav.style.position = 'absolute';
+  nav.style.top = '82px';
+  nav.style.left = '0';
+  nav.style.right = '0';
+  nav.style.background = '#fff';
+  nav.style.padding = '20px 24px';
+  nav.style.gap = '18px';
+
+});
+
+</script>
+
+</body>
+</html>
